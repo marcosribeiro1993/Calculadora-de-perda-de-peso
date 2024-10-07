@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('engevibra.jfif') no-repeat center center fixed; /* Adicionando a foto de fundo */
+    background-size: 40%; /* Ajusta o tamanho da imagem de fundo para 40% da tela */
+    background-color: #fffefe; /* Cor de fundo atrás da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #0b0a0a;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border: 2px solid #000; /* Borda preta */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #080808;
+}
+
+label {
+    font-size: 1rem;
+    color: #080808;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #333; /* Borda escura */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Inputs com leve transparência */
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]::placeholder, select {
+    color: rgba(0, 0, 0, 0.7); /* Cor do texto placeholder */
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(4, 0, 223); /* Botão escuro */
+    color: rgb(253, 252, 252);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: rgba(33, 136, 56, 0.9); /* Cor do botão ao passar o mouse */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #020101;
+    text-align: center;
+    min-height: 40px;
+}
+
+p#resultado::before {
+    content: 'Resultado: ';
+    font-weight: bold;
+}
+
+/* Estilo da imagem de fundo */
+#background-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Tamanho menor da imagem */
+    height: auto;
+    opacity: 0.4; /* Transparência da imagem de fundo */
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}

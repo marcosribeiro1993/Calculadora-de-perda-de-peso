@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Perda de Peso por Furo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora de Perda de Peso por Furo</h2>
+
+        <label for="diametro">Diâmetro do Furo (mm):</label>
+        <input type="number" id="diametro" placeholder="Ex: 10" required>
+
+        <label for="profundidade">Profundidade do Furo (mm):</label>
+        <input type="number" id="profundidade" placeholder="Ex: 50" required>
+
+        <label for="material">Material:</label>
+        <select id="material">
+            <option value="2.7">Alumínio (2.7 g/cm³)</option>
+            <option value="7.9">Aço Inoxidável (7.9 g/cm³)</option>
+            <option value="7.85">Aço Carbono (7.85 g/cm³)</option>
+            <option value="8.96">Cobre (8.96 g/cm³)</option>
+            <option value="8.5">Latão (8.5 g/cm³)</option>
+            <option value="7.87">Ferro (7.87 g/cm³)</option>
+            <option value="7.13">Zinco (7.13 g/cm³)</option>
+            <option value="4.5">Titânio (4.5 g/cm³)</option>
+            <option value="0.95">Plástico (0.95 g/cm³)</option>
+            <option value="0.8">Madeira (0.8 g/cm³)</option>
+        </select>
+
+        <label for="pesoDesejado">Peso que deseja remover (g):</label>
+        <input type="number" id="pesoDesejado" placeholder="Ex: 100" required>
+
+        <button onclick="calcularPerdaPeso()">Calcular Perda de Peso</button>
+        <button onclick="calcularFuros()">Calcular Quantidade de Furos</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
